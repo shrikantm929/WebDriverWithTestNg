@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8842" started-at="2015-10-08T12:31:17Z" finished-at="2015-10-08T12:31:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8842" started-at="2015-10-08T12:31:17Z" finished-at="2015-10-08T12:31:26Z">
+      <class name="test.Test123">
+        <test-method status="PASS" signature="setBrowser()[pri:0, instance:test.Test123@6adca536]" name="setBrowser" is-config="true" duration-ms="16287" started-at="2015-10-08T18:01:01Z" finished-at="2015-10-08T18:01:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:test.Test123@6adca536]" name="doLogin" is-config="true" duration-ms="8817" started-at="2015-10-08T18:01:18Z" finished-at="2015-10-08T18:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method status="PASS" signature="test222()[pri:0, instance:test.Test123@6adca536]" name="test222" duration-ms="4" started-at="2015-10-08T18:01:26Z" finished-at="2015-10-08T18:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test222 -->
+        <test-method status="PASS" signature="packUp()[pri:0, instance:test.Test123@6adca536]" name="packUp" is-config="true" duration-ms="4266" started-at="2015-10-08T18:01:26Z" finished-at="2015-10-08T18:01:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- packUp -->
+      </class> <!-- test.Test123 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
