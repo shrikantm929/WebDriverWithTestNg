@@ -1,5 +1,7 @@
 package test;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -10,32 +12,37 @@ public class Test123 extends SetUp {
 
 	/*@Test
 	public void testTextBox(){
-		
-		
+			
 		System.out.println("----------Inside testTextBox()--------------");
-		WebElementHelper txtb = new WebElementHelper();
+	
+		WebElementHelper.ClickonElement("//div[@id='compose']/child::a");
+		WebElementHelper.typeinTextusingXpath(".//*[@id='to_field_1']", "shrikantm929@gmail.com");
+		WebElementHelper.typeinTextusingXpath(".//*[@id='subject_1']", "Hello");
+		WebElementHelper.ClickButton(".//*[@id='sendtop_1']");
+		WebElementHelper.ClickButton("//button[contains(text(),'OK')]");
 		
-	//	txtb.typeInTextBox("locater", "Value");
-		WebElementHelper.ClickonElement("//a[contains(text(),'Flights')]");
-		System.out.println(driver.getCurrentUrl());
-		Assert.assertEquals(driver.getTitle(), "Find a Flight: Mercury Tours:");
+		//Assert.assertEquals(driver.getTitle(), "Find a Flight: Mercury Tours:");
 	}*/
 		
-	@Test
-	public void test222() throws InterruptedException{
-		/*System.out.println("0");
-		WebElementHelper.ClickonElement("//a[contains(text(),'Signin')]");		
-		System.out.println("1");
-		Thread.sleep(2000L);
-		WebElementHelper.typeinTextusingXpath("//form[@id='load_form']/fieldset[1]/input", "shrikantm.m");
-		//WebElementHelper.typeInTextBox("//form[@id='load_form']/fieldset[1]/input", "shrikantm.m");
-		System.out.println("2");
-		WebElementHelper.typeinTextusingXpath("//form[@id='load_form']/fieldset[2]/input", "mercury@123");		
-		System.out.println("3");
-		WebElementHelper.ClickonElement("//form[@id='load_form']/div/div[2]/input");
-		System.out.println("4");*/
+	
+	@Test 
+	public void bookOneWayTicket(){
+		System.out.println("----------Inside testTextBox()--------------");		
+		
+		driver.get("http://google.com");
+		WebElementHelper.back();
+		WebElementHelper.forward();
+		WebElementHelper.refresh();
+		WebElementHelper.navigateToPage("http://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_prompt");
+		driver.switchTo().frame(driver.findElement(By.id("iframeResult")));
+		WebElementHelper.ClickButton("//button[text()='Try it']");
+		
+		Alert alert = driver.switchTo().alert();
+		System.out.println(alert.getText());
+		alert.sendKeys("Shrikant");
+		alert.accept();
+		
+		
 	}
-	
-	
 	
 }

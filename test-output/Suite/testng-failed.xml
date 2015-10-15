@@ -3,18 +3,17 @@
 <suite name="Failed suite [Suite]" parallel="none">
   <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="test.testLogin">
+        <methods>
+          <include name="loginWithValidDetails"/>
+        </methods>
+      </class> <!-- test.testLogin -->
       <class name="helper.SetUp">
         <methods>
           <include name="packUp"/>
-          <include name="doLogin"/>
           <include name="setBrowser"/>
         </methods>
       </class> <!-- helper.SetUp -->
-      <class name="test.Test123">
-        <methods>
-          <include name="test222"/>
-        </methods>
-      </class> <!-- test.Test123 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

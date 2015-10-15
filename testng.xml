@@ -3,11 +3,8 @@
 <suite name="Suite" parallel="none">
   <test name="Test">
     <classes>
-     	<class name="helper.SetUp"/>     	
-       <class name="test.Test123"/>
-     
-       
-      
+    <class name="helper.SetUp"/>
+      <class name="test.testLogin"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

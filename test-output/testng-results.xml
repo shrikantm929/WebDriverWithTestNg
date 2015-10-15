@@ -1,29 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8842" started-at="2015-10-08T12:31:17Z" finished-at="2015-10-08T12:31:26Z">
+  <suite name="Suite" duration-ms="15" started-at="2015-10-15T06:40:04Z" finished-at="2015-10-15T06:40:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8842" started-at="2015-10-08T12:31:17Z" finished-at="2015-10-08T12:31:26Z">
-      <class name="test.Test123">
-        <test-method status="PASS" signature="setBrowser()[pri:0, instance:test.Test123@6adca536]" name="setBrowser" is-config="true" duration-ms="16287" started-at="2015-10-08T18:01:01Z" finished-at="2015-10-08T18:01:17Z">
+    <test name="Test" duration-ms="15" started-at="2015-10-15T06:40:04Z" finished-at="2015-10-15T06:40:04Z">
+      <class name="helper.SetUp">
+        <test-method status="FAIL" signature="setBrowser()[pri:0, instance:helper.SetUp@75bd9247]" name="setBrowser" is-config="true" duration-ms="0" started-at="2015-10-15T12:10:04Z" finished-at="2015-10-15T12:10:04Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[common/ReadConfig]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: common/ReadConfig
+	at helper.SetUp.setBrowser(SetUp.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:277)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: java.lang.ClassNotFoundException: common.ReadConfig
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 19 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:test.Test123@6adca536]" name="doLogin" is-config="true" duration-ms="8817" started-at="2015-10-08T18:01:18Z" finished-at="2015-10-08T18:01:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="test222()[pri:0, instance:test.Test123@6adca536]" name="test222" duration-ms="4" started-at="2015-10-08T18:01:26Z" finished-at="2015-10-08T18:01:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test222 -->
-        <test-method status="PASS" signature="packUp()[pri:0, instance:test.Test123@6adca536]" name="packUp" is-config="true" duration-ms="4266" started-at="2015-10-08T18:01:26Z" finished-at="2015-10-08T18:01:31Z">
+        <test-method status="FAIL" signature="packUp()[pri:0, instance:helper.SetUp@75bd9247]" name="packUp" is-config="true" duration-ms="0" started-at="2015-10-15T12:10:04Z" finished-at="2015-10-15T12:10:04Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helper.SetUp.packUp(SetUp.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- packUp -->
-      </class> <!-- test.Test123 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- helper.SetUp -->
+      <class name="test.testLogin">
+        <test-method status="SKIP" signature="loginWithValidDetails()[pri:0, instance:test.testLogin@3c5a99da]" name="loginWithValidDetails" duration-ms="0" started-at="2015-10-15T12:10:04Z" finished-at="2015-10-15T12:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidDetails -->
+      </class> <!-- test.testLogin -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
